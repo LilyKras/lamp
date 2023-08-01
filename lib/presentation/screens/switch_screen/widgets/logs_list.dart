@@ -12,7 +12,7 @@ class LogsList extends ConsumerWidget {
       decoration: BoxDecoration(
           border: Border.all(),
           borderRadius: BorderRadius.circular(21),
-          color: const Color.fromARGB(43, 105, 15, 208)),
+          color: const Color.fromARGB(43, 105, 15, 208),),
       padding: const EdgeInsets.all(8.0),
       height: 200,
       child: ListView.builder(
