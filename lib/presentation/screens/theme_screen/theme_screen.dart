@@ -11,14 +11,18 @@ class ThemeScreen extends ConsumerWidget {
   Widget build(BuildContext context, ref) {
     var themeMode = ref.watch(themeManager) as bool;
     return Theme(
-      data: themeMode? darkTheme:lightTheme,
-        
+      data: themeMode ? darkTheme : lightTheme,
       child: Scaffold(
-        appBar: AppBar(title: const Text('Your theme'),),
-       
-          body: Center(
-        child: Text(themeMode? 'Bye, world': 'Hello, world', style: const TextStyle(fontSize: 50),)
-      ),),
+        appBar: AppBar(
+          title: const Text('Your theme'),
+        ),
+        body: Center(
+          child: Text(
+            themeMode ? 'Bye, world' : 'Hello, world',
+            style: const TextStyle(fontSize: 50),
+          ),
+        ),
+      ),
     );
   }
 }
